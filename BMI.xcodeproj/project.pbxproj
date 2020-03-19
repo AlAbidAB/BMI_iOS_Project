@@ -7,23 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834F66BD24178D1E00C9EF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F66BC24178D1D00C9EF3A /* Assets.xcassets */; };
+		8356364B2421F16100C54314 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356364A2421F16100C54314 /* BackgroundView.swift */; };
+		83662BDB24235878009C4EAC /* SwiftySwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662BDA24235878009C4EAC /* SwiftySwitch.swift */; };
 		836C22062414AFAD008A9DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C22052414AFAD008A9DCA /* AppDelegate.swift */; };
 		836C22082414AFAD008A9DCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C22072414AFAD008A9DCA /* SceneDelegate.swift */; };
 		836C220A2414AFAD008A9DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C22092414AFAD008A9DCA /* ViewController.swift */; };
 		836C220D2414AFAD008A9DCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836C220B2414AFAD008A9DCA /* Main.storyboard */; };
-		836C220F2414AFBB008A9DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836C220E2414AFBB008A9DCA /* Assets.xcassets */; };
 		836C22122414AFBB008A9DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836C22102414AFBB008A9DCA /* LaunchScreen.storyboard */; };
+		836C221A2414B2D3008A9DCA /* ImageBorderWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C22192414B2D3008A9DCA /* ImageBorderWithShadow.swift */; };
+		836C222F2414C174008A9DCA /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 836C222D2414C173008A9DCA /* ASValueTrackingSlider.m */; };
+		836C22302414C174008A9DCA /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836C222E2414C173008A9DCA /* ASValuePopUpView.m */; };
+		836C22332414FE82008A9DCA /* RoundViewPropertyforUikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C22322414FE82008A9DCA /* RoundViewPropertyforUikit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		834F66BC24178D1D00C9EF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8356364A2421F16100C54314 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = ../../RemoteAppAC/RemoteAppAC/BackgroundView.swift; sourceTree = "<group>"; };
+		83662BDA24235878009C4EAC /* SwiftySwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySwitch.swift; sourceTree = "<group>"; };
 		836C22022414AFAD008A9DCA /* BMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836C22052414AFAD008A9DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836C22072414AFAD008A9DCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		836C22092414AFAD008A9DCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		836C220C2414AFAD008A9DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		836C220E2414AFBB008A9DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836C22112414AFBB008A9DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836C22132414AFBB008A9DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836C22192414B2D3008A9DCA /* ImageBorderWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBorderWithShadow.swift; sourceTree = "<group>"; };
+		836C222B2414C173008A9DCA /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		836C222C2414C173008A9DCA /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		836C222D2414C173008A9DCA /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		836C222E2414C173008A9DCA /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		836C22312414C2C6008A9DCA /* BMI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMI-Bridging-Header.h"; sourceTree = "<group>"; };
+		836C22322414FE82008A9DCA /* RoundViewPropertyforUikit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewPropertyforUikit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +71,21 @@
 		836C22042414AFAD008A9DCA /* BMI */ = {
 			isa = PBXGroup;
 			children = (
+				834F66BC24178D1D00C9EF3A /* Assets.xcassets */,
+				836C22312414C2C6008A9DCA /* BMI-Bridging-Header.h */,
+				836C22322414FE82008A9DCA /* RoundViewPropertyforUikit.swift */,
 				836C22052414AFAD008A9DCA /* AppDelegate.swift */,
 				836C22072414AFAD008A9DCA /* SceneDelegate.swift */,
+				83662BDA24235878009C4EAC /* SwiftySwitch.swift */,
+				8356364A2421F16100C54314 /* BackgroundView.swift */,
 				836C22092414AFAD008A9DCA /* ViewController.swift */,
 				836C220B2414AFAD008A9DCA /* Main.storyboard */,
-				836C220E2414AFBB008A9DCA /* Assets.xcassets */,
 				836C22102414AFBB008A9DCA /* LaunchScreen.storyboard */,
+				836C22192414B2D3008A9DCA /* ImageBorderWithShadow.swift */,
+				836C222B2414C173008A9DCA /* ASValuePopUpView.h */,
+				836C222E2414C173008A9DCA /* ASValuePopUpView.m */,
+				836C222C2414C173008A9DCA /* ASValueTrackingSlider.h */,
+				836C222D2414C173008A9DCA /* ASValueTrackingSlider.m */,
 				836C22132414AFBB008A9DCA /* Info.plist */,
 			);
 			path = BMI;
@@ -99,6 +123,7 @@
 				TargetAttributes = {
 					836C22012414AFAD008A9DCA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -126,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836C22122414AFBB008A9DCA /* LaunchScreen.storyboard in Resources */,
-				836C220F2414AFBB008A9DCA /* Assets.xcassets in Resources */,
+				834F66BD24178D1E00C9EF3A /* Assets.xcassets in Resources */,
 				836C220D2414AFAD008A9DCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8356364B2421F16100C54314 /* BackgroundView.swift in Sources */,
 				836C220A2414AFAD008A9DCA /* ViewController.swift in Sources */,
+				836C22332414FE82008A9DCA /* RoundViewPropertyforUikit.swift in Sources */,
+				83662BDB24235878009C4EAC /* SwiftySwitch.swift in Sources */,
+				836C221A2414B2D3008A9DCA /* ImageBorderWithShadow.swift in Sources */,
+				836C222F2414C174008A9DCA /* ASValueTrackingSlider.m in Sources */,
 				836C22062414AFAD008A9DCA /* AppDelegate.swift in Sources */,
 				836C22082414AFAD008A9DCA /* SceneDelegate.swift in Sources */,
+				836C22302414C174008A9DCA /* ASValuePopUpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +324,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ab.com.BMI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMI/BMI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ab.com.BMI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMI/BMI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

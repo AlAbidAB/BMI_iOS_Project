@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,213 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ah-wT-ngI" customClass="BackgroundView" customModule="BMI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqK-xX-BMe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="717"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="746-H5-Mqm">
+                                        <rect key="frame" x="32" y="164" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-Tl-eZa" customClass="RoundButtonView" customModule="BMI" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="aGI-ae-9Bs"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="s87-Sr-hyz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuK-ai-Ewb" customClass="RoundButtonView" customModule="BMI" customModuleProvider="target">
+                                                <rect key="frame" x="200" y="0.0" width="150" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Kjx-o6-iqA"/>
+                                                    <constraint firstAttribute="height" constant="50" id="i01-V2-1zv"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-c6-K92">
+                                        <rect key="frame" x="175.5" y="264" width="63.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KNq-We-lpN" customClass="ASValueTrackingSlider">
+                                        <rect key="frame" x="48" y="348" width="318" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awz-Rf-bB4">
+                                        <rect key="frame" x="173.5" y="428" width="67" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mx3-lg-bRU" customClass="ASValueTrackingSlider">
+                                        <rect key="frame" x="48" y="512" width="318" height="31"/>
+                                    </slider>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2020-03-10 at 4.34.21 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-Pi-UrH">
+                                        <rect key="frame" x="82" y="10" width="250" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Ei6-r0-qmd"/>
+                                            <constraint firstAttribute="height" constant="70" id="Zcz-kI-D9G"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa6-Tc-wUo">
+                                        <rect key="frame" x="170" y="110" width="74" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wgg-Pi-UrH" firstAttribute="centerX" secondItem="746-H5-Mqm" secondAttribute="centerX" id="4Qj-07-6OU"/>
+                                    <constraint firstItem="KNq-We-lpN" firstAttribute="leading" secondItem="VqK-xX-BMe" secondAttribute="leading" constant="50" id="5Xt-xs-QxV"/>
+                                    <constraint firstItem="746-H5-Mqm" firstAttribute="top" secondItem="fa6-Tc-wUo" secondAttribute="bottom" constant="30" id="BHZ-SW-fMV"/>
+                                    <constraint firstItem="Wgg-Pi-UrH" firstAttribute="top" secondItem="VqK-xX-BMe" secondAttribute="top" constant="10" id="LQ1-KM-GLQ"/>
+                                    <constraint firstItem="746-H5-Mqm" firstAttribute="centerX" secondItem="VqK-xX-BMe" secondAttribute="centerX" id="MU0-zM-GPT"/>
+                                    <constraint firstItem="kgv-c6-K92" firstAttribute="top" secondItem="746-H5-Mqm" secondAttribute="bottom" constant="50" id="NGh-dj-Btz"/>
+                                    <constraint firstItem="kgv-c6-K92" firstAttribute="centerX" secondItem="VqK-xX-BMe" secondAttribute="centerX" id="VzS-bX-SAh"/>
+                                    <constraint firstItem="mx3-lg-bRU" firstAttribute="leading" secondItem="KNq-We-lpN" secondAttribute="leading" id="WMT-hz-95Z"/>
+                                    <constraint firstItem="KNq-We-lpN" firstAttribute="top" secondItem="kgv-c6-K92" secondAttribute="bottom" constant="60" id="X6Z-rV-H5b"/>
+                                    <constraint firstItem="mx3-lg-bRU" firstAttribute="top" secondItem="awz-Rf-bB4" secondAttribute="bottom" constant="60" id="bTf-DE-Gya"/>
+                                    <constraint firstItem="fa6-Tc-wUo" firstAttribute="top" secondItem="Wgg-Pi-UrH" secondAttribute="bottom" constant="30" id="bqx-uh-vvf"/>
+                                    <constraint firstItem="mx3-lg-bRU" firstAttribute="centerX" secondItem="awz-Rf-bB4" secondAttribute="centerX" id="dOm-ef-RbL"/>
+                                    <constraint firstItem="fa6-Tc-wUo" firstAttribute="centerX" secondItem="VqK-xX-BMe" secondAttribute="centerX" id="kyf-mI-oft"/>
+                                    <constraint firstItem="awz-Rf-bB4" firstAttribute="top" secondItem="KNq-We-lpN" secondAttribute="bottom" constant="50" id="o7A-Mr-38q"/>
+                                    <constraint firstAttribute="trailing" secondItem="KNq-We-lpN" secondAttribute="trailing" constant="50" id="yhz-dl-jQ1"/>
+                                    <constraint firstItem="mx3-lg-bRU" firstAttribute="trailing" secondItem="KNq-We-lpN" secondAttribute="trailing" id="zbT-1M-R5S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="VqK-xX-BMe" firstAttribute="width" secondItem="5ah-wT-ngI" secondAttribute="width" id="0NA-uJ-f0C"/>
+                            <constraint firstItem="VqK-xX-BMe" firstAttribute="height" secondItem="5ah-wT-ngI" secondAttribute="height" multiplier="0.8" id="OKh-Dx-VRB"/>
+                            <constraint firstItem="VqK-xX-BMe" firstAttribute="leading" secondItem="jmx-2b-Rt7" secondAttribute="leading" id="d1y-3B-Udp"/>
+                            <constraint firstItem="VqK-xX-BMe" firstAttribute="top" secondItem="jmx-2b-Rt7" secondAttribute="top" id="f02-Wy-bBR"/>
+                            <constraint firstItem="jmx-2b-Rt7" firstAttribute="trailing" secondItem="VqK-xX-BMe" secondAttribute="trailing" id="rFE-46-A51"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jmx-2b-Rt7"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="iPhone 11 Pro Max - 3"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="8U3-vW-K9J"/>
+                    <connections>
+                        <outlet property="heightSlider" destination="KNq-We-lpN" id="shN-rb-i9v"/>
+                        <outlet property="weightSlider" destination="mx3-lg-bRU" id="Hma-V0-noG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2032" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rpr-ry-g4O">
+            <objects>
+                <viewController id="Yh6-yW-IXt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iHg-W7-qhC" customClass="BackgroundView" customModule="BMI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-nS-a2N" customClass="SwiftySwitch" customModule="BMI" customModuleProvider="target">
+                                <rect key="frame" x="100" y="316" width="183" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="mySize">
+                                        <size key="value" width="100" height="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" red="0.56837577750000001" green="1" blue="0.20384367370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corners0to1">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="-32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotSpacer">
+                                        <integer key="value" value="-3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="smallDot0to1">
+                                        <real key="value" value="-4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" red="1" green="0.36971157599999999" blue="0.58596387029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8AC-6C-dlY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="iPhone 11 Pro Max - 1"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="Screenshot 2020-03-08 at 10.54.26 AM"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRn-B6-pur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2850.7246376811595" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QlN-xV-iYc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" hidesBarsWhenKeyboardAppears="YES" id="Cii-kR-kW9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="irf-6V-Rqv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zjQ-Dj-l66">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OmR-Xa-XkO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R12-kM-TsI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screenshot 2020-03-08 at 10.54.26 AM" width="331" height="386"/>
+        <image name="Screenshot 2020-03-10 at 4.34.21 PM" width="253" height="389"/>
+        <image name="iPhone 11 Pro Max - 1" width="414" height="896"/>
+        <image name="iPhone 11 Pro Max - 3" width="414" height="896"/>
+    </resources>
 </document>
